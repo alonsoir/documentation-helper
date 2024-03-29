@@ -9,9 +9,9 @@ Obviously you can do the same with every dataset you want.
 
 Basically you have three scripts in this project:
 
-langchain_retrieval_doc_helper.py --> my work. Original work from Eden was not working for me.
-main.py --> it invokes the logic from core_agent.py
-core_agent.py --> basically is a refactor from first script.
+langchain_retrieval_doc_helper.py --> My work. Original work from Eden was not working for me. Problem with dependencies.
+main.py --> Modified to invoke the logic from core_agent.py
+core_agent.py --> Basically is a refactor from first script.
 
 ![Logo](https://github.com/emarco177/documentation-helper/blob/main/static/banner.gif)
 [![udemy](https://img.shields.io/badge/LangChain%20Udemy%20Course-%2412.99-green)](https://www.udemy.com/course/langchain/?couponCode=LANGCHAINCD8C0B4060)
@@ -72,4 +72,5 @@ To run tests, run the following command
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.udemy.com/course/langchain/?referralCode=D981B8213164A3EA91AC)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eden-marco/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alonso-isidoro-roman-8ab57445/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.udemy.com/user/eden-marco/)
