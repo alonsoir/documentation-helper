@@ -1,8 +1,9 @@
 from typing import Set
 
-from backend.core import run_llm
 import streamlit as st
 from streamlit_chat import message
+
+from backend.core_agent import run_llm_with_agent
 
 
 def create_sources_string(source_urls: Set[str]) -> str:
@@ -16,7 +17,7 @@ def create_sources_string(source_urls: Set[str]) -> str:
     return sources_string
 
 
-st.header("LangChain🦜🔗 Udemy Course- Helper Bot")
+st.header("LangChain🦜🔗 Udemy Course- Helper Bot. Modified by Aironman. @alonso_isidoro")
 if (
     "chat_answers_history" not in st.session_state
     and "user_prompt_history" not in st.session_state
@@ -33,7 +34,7 @@ prompt = st.text_input("Prompt", placeholder="Enter your message here...") or st
 
 if prompt:
     with st.spinner("Generating response..."):
-        generated_response = run_llm(
+        generated_response = run_llm_with_agent(
             query=prompt, chat_history=st.session_state["chat_history"]
         )
 

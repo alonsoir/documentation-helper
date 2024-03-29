@@ -1,15 +1,10 @@
-from dotenv import load_dotenv
-
-load_dotenv()
-
 import os
 
-from langchain_community.document_loaders import ReadTheDocsLoader
-from langchain_openai import OpenAIEmbeddings
+from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.document_loaders import ReadTheDocsLoader
 from langchain_community.vectorstores import Pinecone as PineconeLangChain
 from pinecone import Pinecone
-
 
 pc = Pinecone(
     api_key=os.environ.get("PINECONE_API_KEY"),

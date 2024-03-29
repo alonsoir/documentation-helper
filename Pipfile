@@ -4,12 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-langchain = "*"
+langchain = "==0.1.1"
 beautifulsoup4 = "*"
 black = "*"
-tiktoken = "*"
-openai = "*"
-pinecone-client = "*"
+tiktoken = "==0.4.0"
+openai = "==0.27.7"
+pinecone-client = "==3.1.0"
 unstructured = "*"
 nltk = "*"
 fastapi = "*"
@@ -18,6 +18,12 @@ uvicorn = "*"
 streamlit = "*"
 streamlit-chat = "*"
 tqdm = "*"
+requests = "*"
+bs4 = "*"
+watchdog = "*"
+langchain-openai = "*"
+python-dotenv = "*"
+langchain-pinecone = "*"
 
 [dev-packages]
 
