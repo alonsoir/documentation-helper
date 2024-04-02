@@ -26,7 +26,7 @@ def run_llm_with_agent(query: str, chat_history: List[Dict[str, Any]] = []):
     # initialize connection to pinecone (get API key at app.pc.io)
     pinecone_api_key = os.environ.get("PINECONE_API_KEY") or "PINECONE_API_KEY"
     environment = (
-            os.environ.get("PINECONE_ENVIRONMENT_REGION") or "PINECONE_ENVIRONMENT_REGION"
+        os.environ.get("PINECONE_ENVIRONMENT_REGION") or "PINECONE_ENVIRONMENT_REGION"
     )
     # configure client
     pc = Pinecone(api_key=pinecone_api_key)

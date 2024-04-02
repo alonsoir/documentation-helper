@@ -4,12 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-langchain = "==0.1.1"
+langchain = "*"
 beautifulsoup4 = "*"
 black = "*"
-tiktoken = "==0.4.0"
-openai = "==0.27.7"
-pinecone-client = "==3.1.0"
+tiktoken = "*"
+openai = "*"
+pinecone-client = "*"
 unstructured = "*"
 nltk = "*"
 fastapi = "*"
@@ -24,9 +24,11 @@ watchdog = "*"
 langchain-openai = "*"
 python-dotenv = "*"
 langchain-pinecone = "*"
+pdf2image = "*"
+pdfminer = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.11"
-python_full_version = "3.11.0"
+python_version = "*"
+python_full_version = "*"

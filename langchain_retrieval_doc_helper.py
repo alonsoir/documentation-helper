@@ -47,7 +47,7 @@ if pinecone_index_name in pc.list_indexes().names():
 #        spec=spec
 #    )
 
-# in my case, no, because i already created using the web api and initialized using ingestion.py script.
+# in my case, no, because i already created using the web api and initialized using ingestion_langchain_doc_index.py script.
 
 # wait for index to be initialized
 while not pc.describe_index(pinecone_index_name).status["ready"]:
